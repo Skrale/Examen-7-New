@@ -16,9 +16,11 @@ public class CardDisplay : MonoBehaviour {
     public Text manaText;
     public Text attackText;
     public Text healthText;
+    
 
-	// Use this for initialization
-	void Start () {
+	public void Initialize (Card tempCard) {
+
+        card = tempCard;
 
         nameText.text = card.name;
         descriptionText.text = card.description;
