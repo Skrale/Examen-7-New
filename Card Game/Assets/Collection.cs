@@ -23,21 +23,20 @@ public class Collection : MonoBehaviour
 
     private void OnEnable()
     {
-        CompareForNewCards();
+        CreateNewCards();
         
         //collectionPanel.GetComponent<RectTransform>().sizeDelta = cardPrefab.GetComponent<RectTransform>().sizeDelta;
     }
 
-    void CompareForNewCards()
+    void CreateNewCards()
     {
-        List<Card> tempCards = new List<Card>();
-
+        foreach (CardDisplay display in collectionPanel.GetComponentsInChildren<CardDisplay>())
+        {
+            Destroy(display.gameObject);
+        }
         foreach(Card card in manager.cardLibrary)
         {
-            if (!cardLibrary.Contains(card))
-            {
-                InstantiateCard(card);
-            }
+            InstantiateCard(card);
         }
     }
 

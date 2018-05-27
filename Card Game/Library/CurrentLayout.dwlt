@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 8289
+  controlID: 332
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 8290
+  controlID: 381
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 8291
+  controlID: 382
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -257,8 +257,8 @@ MonoBehaviour:
     y: 0
     width: 460
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -371,9 +371,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: dc0ff6ff
-    m_LastClickedID: -651300
-    m_ExpandedIDs: 92aaf6ff1c16f8ffae1cffff70deffff96dfffff8ce1ffff52f4ffff000000000430000010300000a6310000c4310000ce310000
+    m_SelectedIDs: 64290000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efbffff000000004e2b0000582b00007e2b00008c2b0000962b0000c42b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -424,14 +424,14 @@ MonoBehaviour:
     height: 655
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 9137.648494978856
+  lastFramingTime: 12192.180196302665
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 898.9702, y: 547.1852, z: 18.773125}
+    m_Target: {x: 979.70276, y: 544.41223, z: -5.1632485}
     speed: 2
-    m_Value: {x: 898.9702, y: 547.1852, z: 18.773125}
+    m_Value: {x: 979.70276, y: 544.41223, z: -5.1632485}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -459,9 +459,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1150.1348
+    m_Target: 1129.818
     speed: 2
-    m_Value: 1150.1348
+    m_Value: 1129.818
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -582,19 +582,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Art
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 95
   m_LastFolders:
-  - Assets/Art
+  - Assets
   m_LastFoldersGridSize: 95
   m_LastProjectPath: C:\Users\Joey\Documents\GitHub\Examen-7-New\Card Game
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e42f0000
-    m_LastClickedID: 12260
-    m_ExpandedIDs: 00000000c02e0000602f000000ca9a3bffffff7f
+    m_SelectedIDs: 5e280000
+    m_LastClickedID: 10334
+    m_ExpandedIDs: 000000005e280000dc29000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -622,7 +622,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c02e0000602f000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000005e280000dc29000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -650,7 +650,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 66adf3ff82000000a40500009c03000076010000ba0500001c030000a80200002ed801003a0300005adefeff64d8fefff0000000b4070000ea400000de220700180700007003000014050000200200009e050000a0060000d008000014ba0600b4060000b28b0500100c0000ee13fffff800000050de00001a080000821e00002a3100007e2c0000e81b0000025efdffea04000030220000fa510000b6f2fcff5624fbff9a13f5ff9a2b0000dc17fbff3e2900009c7bffff00000000
+    m_ExpandedInstanceIDs: 66adf3ff82000000a40500009c03000076010000ba0500001c030000a80200002ed801003a0300005adefeff64d8fefff0000000b4070000ea400000de220700180700007003000014050000200200009e050000a0060000d008000014ba0600b4060000b28b0500100c0000ee13fffff800000050de00001a080000821e00002a3100007e2c0000e81b0000025efdffea04000030220000fa510000b6f2fcff5624fbff9a13f5ff9a2b0000dc17fbff3e2900009c7bffff6228000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
