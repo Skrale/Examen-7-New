@@ -21,6 +21,8 @@ public class CardPack : MonoBehaviour
     public Button buyButton;
     public PackTypes currentPackType;
 
+    List<Card> tempCompleteList = new List<Card>();
+
     void Start()
     {
 
@@ -35,8 +37,6 @@ public class CardPack : MonoBehaviour
 
     public void AddCards()
     {
-        List<Card> tempCompleteList = new List<Card>();
-
         switch (currentPackType)
         {
             case PackTypes.Premium:
@@ -66,11 +66,16 @@ public class CardPack : MonoBehaviour
             default:
                 break;
         }
-        foreach(Card card in tempCompleteList)
+        cardAmount--;
+    }
+
+    public void AddToCollection()
+    {
+        foreach (Card card in tempCompleteList)
         {
             packManager.gameManager.cardLibrary.Add(card);
         }
-        cardAmount--;
+        tempCompleteList.Clear();
     }
 
     public void Buy()
