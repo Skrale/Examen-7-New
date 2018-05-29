@@ -6,10 +6,12 @@ using UnityEngine.EventSystems;
 public class DropCards : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public bool onPointer = false;
+    public PackManager packHandler;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        onPointer = true;
+        if(packHandler.tempCompleteList.Count <= 0)
+            onPointer = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)

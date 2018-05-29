@@ -11,6 +11,8 @@ public class PackHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     RectTransform rect;
 
+    public bool canDrag = true;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
 
@@ -18,7 +20,7 @@ public class PackHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && canDrag)
         {
             rect.transform.position = Input.mousePosition;
         }

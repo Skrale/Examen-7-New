@@ -9,7 +9,12 @@ public class PackManager : MonoBehaviour
     public Card[] legendaryLibrary;
 
     public GameManager gameManager;
+    public LerpManager lerpManager;
     public DropCards dropArea;
+    public GameObject cardPrefab;
+
+    public List<Card> tempCompleteList = new List<Card>();
+    public List<GameObject> tempObjList = new List<GameObject>();
 
     void Start()
     {
@@ -19,6 +24,17 @@ public class PackManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void InstantiateCards()
+    {
+        tempObjList.Clear();
+        for (int i = 0; i < tempCompleteList.Count; i++)
+        {
+            GameObject tempObject = InstantiateCard(tempCompleteList[i]);
+            StartCoroutine(lerpManager.MoveObject(tempObject, lerpManager.startMarker.position, lerpManager.endMarkers[i].position, 1));
+            tempObjList.Add(tempObject);
+        }
     }
 
     public void HasDroppedCorrectly(PackHandler pack)
@@ -60,5 +76,16 @@ public class PackManager : MonoBehaviour
             tempList.Add(legendaryLibrary[Random.Range(0, legendaryLibrary.Length)]);
         }
         return tempList;
+    }
+
+
+    GameObject InstantiateCard(Card card)
+    {
+        GameObject tempObject = Instantiate(cardPrefab);
+        tempObject.transform.SetParent(transform);
+        tempObject.transform.localScale = new Vector3(90, 90);
+        tempObject.GetComponent<CardDisplay>().Initialize(card);
+
+        return tempObject;
     }
 }

@@ -46,5 +46,8 @@ public class Collection : MonoBehaviour
         tempObject.transform.SetParent(collectionPanel.transform);
         tempObject.GetComponent<CardDisplay>().Initialize(card);
         cardLibrary.Add(card);
+        tempObject.GetComponent<CardDisplay>().collection = this;
+        tempObject.GetComponent<CardDisplay>().button.interactable = true;
+
     }
 }

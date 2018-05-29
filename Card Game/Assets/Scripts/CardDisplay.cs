@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour {
 
+    public Collection collection;
+
     public Card card;
+
+    public Button button;
 
     public Text nameText;
     public Text descriptionText;
@@ -17,6 +21,14 @@ public class CardDisplay : MonoBehaviour {
     public Text attackText;
     public Text healthText;
     
+
+    public void SellCard()
+    {
+        collection.manager.money += Random.Range(10, 40);
+        collection.manager.cardLibrary.Remove(card);
+
+        Destroy(gameObject);
+    }
 
 	public void Initialize (Card tempCard) {
 
