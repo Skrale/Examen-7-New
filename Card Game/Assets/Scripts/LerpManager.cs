@@ -26,27 +26,4 @@ public class LerpManager : MonoBehaviour
 
         tempObject.transform.position = endPos;
     }
-
-    /*
-    void Start()
-    {
-        startTime = Time.time;
-        journeyLength = Vector3.Distance(startMarker.position, endMarker1.position);
-    }
-
-    void Update()
-    {
-        if (canLerp)
-        {
-            Debug.Log("ongo");
-            DoLerp();
-        }
-    }
-    
-    public void DoLerp()
-    {
-        float distCovered = (Time.time - startTime) * speed;
-        float fracJourney = distCovered / journeyLength;
-        lerpDit.transform.position = Vector3.Lerp(startMarker.position, endMarker1.position, fracJourney);
-    }*/
 }

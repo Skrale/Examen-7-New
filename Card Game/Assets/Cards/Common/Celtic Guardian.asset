@@ -18,3 +18,4 @@ MonoBehaviour:
   manaCost: 4
   attack: 5
   health: 4
+  cardId: 1

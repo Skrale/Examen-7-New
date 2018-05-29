@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Collection : MonoBehaviour
 {
+
+    public int braap;
 
     public List<Card> cardLibrary = new List<Card>();
 
@@ -40,7 +43,7 @@ public class Collection : MonoBehaviour
         }
     }
 
-    void InstantiateCard(Card card)
+    public void InstantiateCard(Card card)
     {
         GameObject tempObject = Instantiate(cardPrefab);
         tempObject.transform.SetParent(collectionPanel.transform);
@@ -48,6 +51,5 @@ public class Collection : MonoBehaviour
         cardLibrary.Add(card);
         tempObject.GetComponent<CardDisplay>().collection = this;
         tempObject.GetComponent<CardDisplay>().button.interactable = true;
-
     }
 }

@@ -632,8 +632,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardLibrary: []
   deckLibrary: []
+  allCards:
+  - {fileID: 11400000, guid: 64661d0a6bd0284448165fbd8c89960a, type: 2}
+  - {fileID: 11400000, guid: e2cd44cc07c2c104ca7cedb78ff8ee2f, type: 2}
+  - {fileID: 11400000, guid: 9539bb9760b740842b6e406f8d4c94aa, type: 2}
+  - {fileID: 11400000, guid: 8ee370fca7ab9ac44bc7af15a915369a, type: 2}
+  - {fileID: 11400000, guid: fa994ba544bfd0d499e8c0566d3f0533, type: 2}
+  - {fileID: 11400000, guid: 7f1865594f762f3419f30b9f362b1652, type: 2}
+  - {fileID: 11400000, guid: 9db19a4208c245948b6afdcdc90dc6b1, type: 2}
+  - {fileID: 11400000, guid: cc2eb2ac42401924d889157ed24fbbe1, type: 2}
+  - {fileID: 11400000, guid: 96b10668296f64a4abc0672f2191fe46, type: 2}
+  - {fileID: 11400000, guid: 7556228b3b68e024fb482a4a54a01023, type: 2}
+  - {fileID: 11400000, guid: 5801fcb78ec93584aaf4aef8cbb257d1, type: 2}
+  - {fileID: 11400000, guid: b6788d19c96afda4490817d0b02345d9, type: 2}
+  - {fileID: 11400000, guid: a9c0840a3e0cfb64281a0660dc679628, type: 2}
+  - {fileID: 11400000, guid: 0a26ef76ce95eb949bcf6344e0a36f6b, type: 2}
+  - {fileID: 11400000, guid: 72f2cbf9491ab1f45b4c646ad7460b64, type: 2}
   money: 300
   moneyText: {fileID: 1099474843}
+  collection: {fileID: 571633097}
+  collectionString: 
 --- !u!4 &349493822
 Transform:
   m_ObjectHideFlags: 0
@@ -1109,6 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695fb014cc06745438ba99a0fd17ce10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  braap: 0
   cardLibrary: []
   manager: {fileID: 349493821}
   cardPrefab: {fileID: 1016169498396992, guid: 2dbfd817309d0484fb0cef0045a415a5, type: 2}

@@ -15,4 +15,6 @@ public class Card : ScriptableObject {
     public int attack;
     public int health;
 
+    public int cardId;
+
 }
